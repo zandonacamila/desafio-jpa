@@ -123,5 +123,25 @@ public class LivrosDao {
 
 		return ret;
 	}
+	
+	public Livros buscaPorNomeCompleta(String nome) {
+
+		Livros ret = new Livros();
+
+		try {
+
+			EntityManager em = emf.createEntityManager();
+
+			ret = em.createQuery("select l from Livros l where l.nome = :nome", Livros.class)
+					.setParameter("nome", nome)
+					.setMaxResults(1)
+					.getSingleResult();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		return ret;
+	}
 
 }

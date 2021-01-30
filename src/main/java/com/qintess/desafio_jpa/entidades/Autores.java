@@ -84,5 +84,11 @@ public class Autores {
 	public void setLivros(List<Livros> livros) {
 		this.livros = livros;
 	}
+
+	@Override
+	public String toString() {
+		return "Autores [id=" + id + ", nome=" + nome + ", dataNascimento=" + dataNascimento + ", nacionalidade="
+				+ nacionalidade + ", biografia=" + biografia + ", livros=" + livros + "]";
+	}
 	
 }

@@ -81,5 +81,11 @@ public class Livros {
 	public void setEdicao(List<Edicao> edicao) {
 		this.edicao = edicao;
 	}
+
+	@Override
+	public String toString() {
+		return "Livros [codigo=" + codigo + ", nome=" + nome + ", idioma=" + idioma + ", ano=" + ano + ", autor="
+				+ autor + ", edicao=" + edicao + "]";
+	}
 	
 }

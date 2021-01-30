@@ -106,5 +106,12 @@ public class Edicao {
 	public void setEditoras(Editoras editoras) {
 		this.editoras = editoras;
 	}
+
+	@Override
+	public String toString() {
+		return "Edicao [isbn=" + isbn + ", preco=" + preco + ", ano=" + ano + ", paginas=" + paginas + ", estoque="
+				+ estoque + ", codigo_livro=" + codigo_livro + ", id_editora=" + id_editora + ", livro=" + livro
+				+ ", editoras=" + editoras + "]";
+	}
 	
 }
